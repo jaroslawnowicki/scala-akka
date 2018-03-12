@@ -29,7 +29,7 @@ object Read extends App {
         println(inc)
 
 
-        val writeFileActor ? "ssa"
+        writeFileActor ! WriteFile.Message(s, inc)
 
       })
 
